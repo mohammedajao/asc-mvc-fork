@@ -1,0 +1,5 @@
+.submit-form, .update-form, .delete-form {
+    max-width: 32%;
+    margin: 0;
+    display: inline-block;
+}

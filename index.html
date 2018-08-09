@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- You do not need to edit the HTML -->
+    <div class="container" style="text-align: center;">
+        <div class="submit-form" style="float: left;">
+            <h6>MAKE</h6>
+            <h6>Title</h6>
+            <input id="title" type="text"><br>
+            <h6>Author</h6>
+            <input type="text" id="author"><br>
+            <h6>Content</h6>
+            <textarea id="post-body" name="" cols="30" rows="10"></textarea><br>
+            <button type="submit" id="submitter">Submit</button>
+        </div>
+        <div class="update-form">
+            <h6>UPDATE</h6>
+                <h6>ID</h6>
+                <input type="text" id="id" disabled>
+                    <h6>Title</h6>
+                    <input id="updt-title" type="text"><br>
+                    <h6>Author</h6>
+                    <input type="text" id="updt-author"><br>
+                    <h6>Content</h6>
+                    <textarea id="updt-post-body" name="" cols="30" rows="10"></textarea><br>
+                    <button type="submit" id="updt-submitter">Update</button>
+            </div>
+        <div class="delete-form" style="float: right">
+            <h6>DELETE</h6>
+            <h6>ID</h6>
+            <input type="text" id="del-id" disabled>
+            <button type="submit" id="del-submitter">Delete</button>
+        </div>
+        
+        <div style="clear: both;">
+            <hr style="padding-top: 80px;">
+            <div id="post-view">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="randomstring.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="./app/view/home.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
